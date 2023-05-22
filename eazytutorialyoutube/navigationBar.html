@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!--Step 2 => We connect the fonts. 2 <link> tags above are our links from google fonts to connect.-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Step 3 => WE connect style.css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Step 6 => Create the navigation bar-->
+    <nav class="flex-div">
+      <!--Step 7 => We will devide our nav in 3 divs-->
+
+      <!--Step 7.1 => Our left div-->
+      <!-- Step 17 => add the flex-div class also next to nav-left, to inherit css property-->
+      <div class="nav-left flex-div">
+        <!--Step 8 => In the left div we will add 2 images, menu icon & logo -->
+        <img src="images/menu.png" class="menu-icon" />
+        <img src="images/logo.png" class="logo" />
+      </div>
+
+      <!--Step 7.2 => Our middle div-->
+      <!-- Step 18 =>Add contents in our middle div, also we add the flex-div class to get css properties-->
+      <div class="nav-middle flex-div">
+        <!--Step 19 => We create a div with an input for the search box and an image, also we add the flex-div class to get css properties from that. -->
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search" />
+          <img src="images/search.png" />
+        </div>
+
+        <!--Step 20 => next to the search-box div, we add an image for the voice search icon-->
+        <img src="images/voice-search.png" class="mic-icon" />
+      </div>
+
+      <!--Step 7.3 => Our right div-->
+      <!--Step 15 => Our images are not aligned properly, so we add another class inside our right div, we add the flex-div that we have specified some proeprties to align-items: center;-->
+      <div class="nav-right flex-div">
+        <!--Step 9 => In the right side of the nav we will add some more images(icons)-->
+        <img src="images/upload.png" />
+        <img src="images/more.png" />
+        <img src="images/notification.png" />
+        <!--Step 13 => Our image is a little small and not circle so we add a class to adjust it-->
+        <img src="images/Jack.png" class="user-icon" />
+      </div>
+    </nav>
+  </body>
+</html>

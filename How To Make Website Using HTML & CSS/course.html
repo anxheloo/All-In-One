@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+  <title>Document</title>
+</head>
+<body>
+  
+  <section class="about-header">
+    <nav>
+      <a href="index.html"><img src="eduford_img/logo.png"></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Our Courses</h1>
+
+  </section>
+
+  <!------------- COURSE --------------->
+  
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, itaque. et porro voluptatem.</p>
+  
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermidiate</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti a illum quo, debitis temporibus</p>
+      </div>
+  
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti a illum quo, debitis temporibus</p>
+      </div>
+  
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti a illum quo, debitis temporibus</p>
+      </div>
+  
+    </div>
+  </section>
+
+  <!----------- FACILITIES-------------->
+
+  <section class="facilities">
+  
+    <h1>Our Facilities</h1>
+    <p>Lorem adhfpahdfakj kjaghaklhgfjkah ahopi ahjh ajhgkhg k hagkjhadska;h ajghkljahgljk haj hgakljhg kjlah.</p>
+  
+    <div class="row">
+      <div class="facilities-col">
+        <img src="eduford_img/library.png">
+        <h3>World Class Library</h3>
+        <p>Lorem lorem lorem lormdk dhjdhfjdh ajkadjflkadjfalkdfj</p>
+      </div>
+  
+      <div class="facilities-col">
+        <img src="eduford_img/cafeteria.png">
+        <h3>Tasty and Healthy Food</h3>
+        <p>Lorem lorem lorem lormdk dhjdhfjdh ajkadjflkadjfalkdfj</p>
+      </div>
+  
+      <div class="facilities-col">
+        <img src="eduford_img/basketball.png">
+        <h3>Largest Play Ground</h3>
+        <p>Lorem lorem lorem lormdk dhjdhfjdh ajkadjflkadjfalkdfj</p>
+      </div>
+    </div>
+  
+  </section>
+  
+  
+
+  <!----------------FOOTER---------------------------->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ea doloremque iste quia ab ratione, delectus sit totam.</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+  </section>
+
+  <!----------------- JAVASCRIPT for Toggle Menu----------------------->
+  <script>
+    function hideMenu(){
+      document.getElementById("navLinks").style.right = "-200px";
+    }
+
+    function showMenu() {
+        document.getElementById("navLinks").style.right = "0px";
+      }
+  </script>
+</body>
+</html>

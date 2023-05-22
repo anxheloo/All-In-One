@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!--Step 2 => We connect the fonts. 2 <link> tags above are our links from google fonts to connect.-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Step 3 => WE connect style.css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Step 6 => Create the navigation bar-->
+    <nav class="flex-div">
+      <!--Step 7 => We will devide our nav in 3 divs-->
+
+      <!--Step 7.1 => Our left div-->
+      <!-- Step 17 => add the flex-div class also next to nav-left, to inherit css property-->
+      <div class="nav-left flex-div">
+        <!--Step 8 => In the left div we will add 2 images, menu icon & logo -->
+        <img src="images/menu.png" class="menu-icon" />
+        <img src="images/logo.png" class="logo" />
+      </div>
+
+      <!--Step 7.2 => Our middle div-->
+      <!-- Step 18 =>Add contents in our middle div, also we add the flex-div class to get css properties-->
+      <div class="nav-middle flex-div">
+        <!--Step 19 => We create a div with an input for the search box and an image, also we add the flex-div class to get css properties from that. -->
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search" />
+          <img src="images/search.png" />
+        </div>
+
+        <!--Step 20 => next to the search-box div, we add an image for the voice search icon-->
+        <img src="images/voice-search.png" class="mic-icon" />
+      </div>
+
+      <!--Step 7.3 => Our right div-->
+      <!--Step 15 => Our images are not aligned properly, so we add another class inside our right div, we add the flex-div that we have specified some proeprties to align-items: center;-->
+      <div class="nav-right flex-div">
+        <!--Step 9 => In the right side of the nav we will add some more images(icons)-->
+        <img src="images/upload.png" />
+        <img src="images/more.png" />
+        <img src="images/notification.png" />
+        <!--Step 13 => Our image is a little small and not circle so we add a class to adjust it-->
+        <img src="images/Jack.png" class="user-icon" />
+      </div>
+    </nav>
+
+    <!---------STEP 24 => SIDEBAR , create the main div-->
+    <div class="sidebar">
+      <!--Step 25 => add a div for the shortcut links with images & title inside <a> tags-->
+      <div class="shortcut-links">
+        <a href=""
+          ><img src="images/home.png" />
+          <p>Home</p></a
+        >
+        <a href=""
+          ><img src="images/explore.png" />
+          <p>Explore</p></a
+        >
+        <a href=""
+          ><img src="images/subscriprion.png" />
+          <p>Subscriptions</p></a
+        >
+        <a href=""
+          ><img src="images/library.png" />
+          <p>Library</p></a
+        >
+        <a href=""
+          ><img src="images/history.png" />
+          <p>History</p></a
+        >
+        <a href=""
+          ><img src="images/playlist.png" />
+          <p>Playlist</p></a
+        >
+        <a href=""
+          ><img src="images/messages.png" />
+          <p>Messages</p></a
+        >
+        <a href=""
+          ><img src="images/show-more.png" />
+          <p>Show More</p></a
+        >
+        <!-- Step 30 => Add an hr line-->
+        <hr />
+      </div>
+
+      <!-- Step 32 => Add another div below the shortcut-links div for subscribtions-->
+      <div class="subscribed-list">
+        <h3>SUBSCRIBED</h3>
+        <a href=""
+          ><img src="images/Jack.png" />
+          <p>Jack Nicholson</p></a
+        >
+        <a href=""
+          ><img src="images/simon.png" />
+          <p>Simon Backer</p></a
+        >
+        <a href=""
+          ><img src="images/tom.png" />
+          <p>Tom Hardy</p></a
+        >
+        <a href=""
+          ><img src="images/megan.png" />
+          <p>Megan Ryan</p></a
+        >
+        <a href=""
+          ><img src="images/cameron.png" />
+          <p>Cameron Diaz</p></a
+        >
+      </div>
+    </div>
+
+    <!--Step 36 => MAIN CONTENT -->
+    <div class="container">
+      <!--banner image, cover image-->
+      <div class="banner">
+        <img src="images/banner.png" />
+      </div>
+
+      <!--Step 38 => Add list of videos-->
+      <div class="list-container">
+        <!--this div holds the image thumbnail, and another div-->
+        <div class="vid-list">
+          <a href="playvideo.html"
+            ><img src="images/thumbnail1.png" class="thumbnail"
+          /></a>
+          <!--This is the other div we mentioned above, that holds an image & a div for video infos -->
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="playvideo.html"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail2.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail3.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail4.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail5.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail6.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail7.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-list">
+          <a href="#"><img src="images/thumbnail8.png" class="thumbnail" /></a>
+
+          <div class="flex-div">
+            <img src="images/Jack.png" />
+            <div class="vid-info">
+              <a href="#"
+                >Best Channel to learn coding that help you to be a web
+                developer.</a
+              >
+              <p>Eazy Tutorial</p>
+              <p>15k Views 2 days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 34 => Add the javascript file to handle click for the hamburger menu, if we click it collapses.-->
+    <script src="index.js"></script>
+  </body>
+</html>
